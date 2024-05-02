@@ -1,90 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
-      <link rel="stylesheet" href="./style.css"/>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./fonts/font-face.css" />
   </head>
   <body>
-    
     <nav>
       <ul>
         <li><a href="#hero">Home</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#timeline">Lebenslauf</a></li>
         <li><a href="#projects">Projects</a></li>
-   
-      </ul>
-    </nav>
       </ul>
     </nav>
     <main>
       <section class="hero">
         <div class="hero-text">
-          <h2 class="text-accent">Hi, ich bin</h2>
+          <h2 class="text-accent">Hallo, ich bin</h2>
           <h1>Jawad Saber</h1>
-          <h2 class="text-primary">Fachinformatiker-System Integration </h2>
-          <p >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia animi
-            reprehenderit, excepturi atque rerum dolores omnis recusandae
-            eligendi quisquam. Voluptatibus numquam quis pariatur obcaecati
-            aliquid!
+          <h2 class="text-primary">Fachinformatiker System Integration;</h2>
+          <p title="Ich, einfach unverbesserlich...">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+            accusantium deleniti ea tenetur voluptatum necessitatibus voluptates
+            pariatur veritatis, voluptatem quos, doloremque earum nostrum nihil
+            inventore?
           </p>
         </div>
-        <img src="https://picsum.photos/400/600" alt="A picture of me" />
+        <img src="https://picsum.photos/400/600" alt="A picture of me." />
       </section>
       <section class="skills">
         <ul>
-            <li>
-                <h3>HTML</h3>
-                <div class="skill-shadow">
-                    <div class="skill-bar" style="width: 70%; background-color: rgb(233, 161, 88);"><span class="value">60</span></div>
-                </div>
-            </li>
-            <li>
-                <h3>CSS</h3>
-                <div class="skill-shadow">
-                    <div class="skill-bar" style="width: 40%; background-color: brown;"><span class="value">40</span></div>
-                </div>
-            </li>
-            <li>
-                <h3>JavaScript</h3>
-                <div class="skill-shadow">
-                    <div class="skill-bar" style="width: 20% ; background-color: yellow;"><span class="value">20</span></div>
-                </div>
-            </li>
-            <li>
-                <h3>Vibes</h3>
-                <div class="skill-shadow">
-                    <div class="skill-bar" style="width:100% ;background-color: green;">
-                      <span class="value">100</span></div>
-                </div>
-            </li>
+          <li>
+            <h3>HTML</h3>
+            <div class="skill-shadow">
+              <div
+                class="skill-bar"
+                style="width: 70%; background-color: rgb(233, 161, 88)"
+                box-shadow:
+                5px
+                0
+                15px
+                green;
+              >
+                <span class="value">70</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h3>CSS</h3>
+            <div class="skill-shadow">
+              <div
+                class="skill-bar"
+                style="
+                  width: 50%;
+                  background-color: blue;
+                  box-shadow: 5px 0 15px blue;
+                "
+              >
+                <span class="value">50</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h3>JavaScript</h3>
+            <div class="skill-shadow">
+              <div
+                class="skill-bar"
+                style="
+                  width: 30%;
+                  background-color: orange;
+                  box-shadow: 5px 0 15px orange;
+                "
+              >
+                <span class="value">30</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h3>Vibes</h3>
+            <div class="skill-shadow">
+              <div
+                class="skill-bar"
+                style="
+                  width: 90%;
+                  background-color: purple;
+                  box-shadow: 5px 0 15px purple;
+                "
+              >
+                <span class="value">90</span>
+              </div>
+            </div>
+          </li>
         </ul>
       </section>
-      <section class="Projects">
+      <section class="timeline">
+        <h2 class="timeline-title">Lebenslauf</h2>
+        <ul class="timeline-items">
+          <li>
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2014</span>
+            <div class="timeline-content">
+              <h3>Abiturabschluss</h3>
+              <p>MS Office; Windows Server; TEMS Investigation;</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2014-2015</span>
+            <div class="timeline-content">
+              <h3>Web Entwicklung bei LUG</h3>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2013-2019</span>
+            <div class="timeline-content">
+              <h3>Uni Abschluss</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                dolorem odit esse repellendus id maxime asperiores est fugiat
+                neque eum?
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2010-2013</span>
+            <div class="timeline-content">
+              <h3>IT und Telekkomunication</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus corporis cumque maxime, ipsam porro voluptatum sunt
+                fugiat sequi, ipsum eos quia?
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="projects">
         <ul>
-            <li>
-                <img src="https://picsum.photos/200/200" alt="Project 1 Image">
-                <h4>Project 1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, eius.</p>
-                <button>Go</button>
-            </li>
-            <li>
-                <img src="https://picsum.photos/200/200" alt="Project 2 Image">
-                <h4>Project 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, non.</p>
-                <button>Go</button>
-            </li>
-            <li>
-                <img src="https://picsum.photos/200/200" alt="Project 3 Image">
-                <h4>Project 3</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, sed.</p>
-                <button>GO</button>
-            </li>
+          <li>
+            <img src="https://picsum.photos/400/400" alt="Project 1 Image" />
+            <h4>Project 1</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+              ut.
+            </p>
+            <button>GO</button>
+          </li>
+          <li>
+            <img src="https://picsum.photos/400/400" alt="Project 2 Image" />
+            <h4>Project 2</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem,
+              inventore.
+            </p>
+            <button>GO</button>
+          </li>
+          <li>
+            <img src="https://picsum.photos/400/400" alt="Project 3 Image" />
+            <h4>Project 3</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem, natus.
+            </p>
+            <button>GO</button>
+          </li>
         </ul>
       </section>
-      
     </main>
   </body>
 </html>
