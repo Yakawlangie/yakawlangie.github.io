@@ -5,14 +5,14 @@
 }
 
 body {
-  margin: 1;
-  padding: 1;
+  margin: 0;
+  padding: 0;
   background-color: var(--background-color);
   font-family: "IBM Plex Serif", sans-serif;
 }
 
 main {
-  color: rgb(255, 255, 255);
+  color: white;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -45,7 +45,6 @@ nav ul {
   margin: 0;
   padding: 0;
   align-items: center;
-  justify-content: space-around;
 }
 
 nav ul li {
@@ -258,13 +257,15 @@ ul.timeline-items .timeline-content:hover {
 }
 
 .timeline-content h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
+  padding: 0;
   margin: 0 0 10px 0;
 }
 
 .timeline-content p {
-  font-size: 16px;
+  font-size: 14px;
+  padding: 0;
   font-weight: 300;
   margin: 0;
 }
@@ -311,6 +312,7 @@ section.projects ul li p {
 
 section.projects ul li button {
   margin-bottom: 1rem;
+  text-decoration: none;
   margin-left: 0.5rem;
   border-radius: 1rem;
   padding: 0.8rem;
@@ -319,4 +321,35 @@ section.projects ul li button {
   font-weight: 700;
   color: white;
   text-shadow: 0 0 4px black;
+  box-shadow: 2px 2px 6px #121212;
+}
+section.projects ul li:hover {
+  box-shadow: 6px 20px 20px var(--primary-color);
+  transform: translateY(-1rem) translateX(0.2rem);
+}
+/* Media-Quaries */
+@media screen and (max-width: 900px) {
+  section.skills ul {
+    gap: 1rem;
+    transform: scale(0.8);
+  }
+  section.skills ul li {
+    width: 80%;
+  }
+  section.timeline h2.timeline-title {
+    margin: 0;
+  }
+  section.timeline {
+    padding: 0.6rem;
+  }
+  section.timeline ul.timeline-items {
+    max-width: fit-content;
+    transform: scale(0.9);
+  }
+  .timeline-content p {
+    max-width: 40vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
