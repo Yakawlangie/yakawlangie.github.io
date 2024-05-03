@@ -329,6 +329,44 @@ section.projects ul li:hover {
 }
 /* Media-Quaries */
 @media screen and (max-width: 900px) {
+  section.projects ul li {
+    margin-bottom: 19px;
+  }
+  section {
+    height: auto;
+  }
+  .projects ul {
+    width: 100%;
+    display: block !important;
+  }
+
+  .projects ul li {
+    width: 100%;
+    display: block;
+    max-width: 100% !important;
+    min-width: auto !important;
+  }
+  nav ul li {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  nav ul li:not(:last-child)::after {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  section.hero {
+    display: block;
+    padding: 0 10px;
+  }
+  section.hero {
+    text-align: center;
+    padding-top: 76px;
+  }
+  .hero-text p {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
   section.skills ul {
     gap: 1rem;
     transform: scale(0.8);
@@ -351,5 +389,21 @@ section.projects ul li:hover {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+  }
+
+  ul.timeline-items li:nth-child(odd),
+  ul.timeline-items li:nth-child(even) {
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+  ul.timeline-items::before {
+    right: auto;
+    left: 13px;
+  }
+  ul.timeline-items .timeline-dot {
+    left: 4px;
+  }
+  ul.timeline-items li:nth-child(odd) {
+    text-align: left;
   }
 }
