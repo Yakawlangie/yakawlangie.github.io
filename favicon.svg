@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="sphere" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#ff6ec7"/>
+      <stop offset="45%" stop-color="#e040a0"/>
+      <stop offset="100%" stop-color="#8b2fc9"/>
+    </radialGradient>
+    <radialGradient id="gloss" cx="35%" cy="28%" r="40%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.55)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="rgba(140,0,200,0.45)"/>
+    </filter>
+  </defs>
+  <!-- Main sphere -->
+  <circle cx="50" cy="52" r="40" fill="url(#sphere)" filter="url(#shadow)"/>
+  <!-- Gloss overlay -->
+  <ellipse cx="40" cy="36" rx="22" ry="16" fill="url(#gloss)"/>
+  <!-- JS text -->
+  <text x="50" y="60" font-family="Arial Black,Arial" font-weight="900" font-size="26" fill="white" text-anchor="middle" opacity="0.95">JS</text>
+  <!-- Sparkle dots -->
+  <circle cx="78" cy="18" r="4" fill="#ff8fd8" opacity="0.9"/>
+  <circle cx="86" cy="28" r="2.5" fill="#ff6ec7" opacity="0.8"/>
+  <circle cx="70" cy="12" r="2" fill="#ffaaee" opacity="0.7"/>
+  <circle cx="84" cy="14" r="1.5" fill="#e040a0" opacity="0.6"/>
+  <circle cx="91" cy="20" r="1.5" fill="#ff8fd8" opacity="0.5"/>
+  <circle cx="75" cy="22" r="1.5" fill="#ffccee" opacity="0.6"/>
+</svg>
